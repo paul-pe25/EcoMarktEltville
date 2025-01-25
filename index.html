@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachhaltig Einkaufen in Eltville</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d00;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            background-image: url('etlville.JPG');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #006400;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+            padding: 2rem;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nachhaltig Einkaufen in der Wein-, Sekt- und Rosenstadt Eltville</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('projektidee')">Projektidee</a>
+        <a href="#" onclick="showSection('standort')">Standortvorteile</a>
+        <a href="#" onclick="showSection('nachhaltigkeit')">Nachhaltigkeit</a>
+        <a href="#" onclick="showSection('visualisierungen')">Visualisierungen</a>
+        <a href="#" onclick="showSection('kontakt')">Kontakt</a>
+    </nav>
+
+    <main>
+        <section id="projektidee" class="content active">
+            <h2>Projektidee</h2>
+            <div class="image-container">
+                <img src="1.JPG" alt="Geplantes Bauprojekt - Vogelperspektive">
+            </div>
+            <p>Das Projekt soll eine nachhaltige Gewerbeimmobilie schaffen, die moderne Architektur mit ökologischer Verantwortung und wirtschaftlicher Tragfähigkeit verbindet. Geplant sind ein Biomarkt und ein Drogeriemarkt, die mit energieeffizienten Bauweisen realisiert werden und eine nachhaltige Infrastruktur bieten.</p>
+            <p>Die Vision ist es, ein Vorzeigeprojekt zu schaffen, das sowohl die lokale Wirtschaft stärkt als auch ein angenehmes Einkaufserlebnis in einem umweltfreundlichen Umfeld bietet.</p>
+        </section>
+
+        <section id="standort" class="content">
+            <h2>Standortvorteile</h2>
+            <p>Eltville liegt strategisch günstig in der Metropolregion Rhein-Main und bietet eine hervorragende Verkehrsanbindung über die B42, die Rheingau-Bahn und den Frankfurter Flughafen. Mit seiner starken wirtschaftlichen Basis im Weinbau und Tourismus ist Eltville ideal für die Ansiedlung nachhaltiger Einzelhandelsprojekte.</p>
+            <p>Die zentrale Lage garantiert eine hohe Besucherfrequenz und eine starke Anbindung an die umliegenden Gemeinden und Städte.</p>
+        </section>
+
+        <section id="nachhaltigkeit" class="content">
+            <h2>Nachhaltigkeitsaspekte</h2>
+            <ul>
+                <li>Installation von Solaranlagen mit einer Leistung von 80 kWp, um den Großteil des Energiebedarfs vor Ort zu decken.</li>
+                <li>Grünflächen von 1.400 m², die zur Verbesserung des Mikroklimas und der Biodiversität beitragen.</li>
+                <li>Berücksichtigung von Wasserschutzzonen und Artenschutzauflagen, um die natürlichen Ressourcen zu schützen.</li>
+            </ul>
+            <p>Dieses Projekt ist ein Vorbild für umweltfreundliche Bauprojekte in der Region und zeigt, dass Nachhaltigkeit und Wirtschaftlichkeit Hand in Hand gehen können.</p>
+        </section>
+
+        <section id="visualisierungen" class="content">
+            <h2>Visualisierungen</h2>
+            <p>Hier sehen Sie eine Auswahl von Planungsbildern des Projekts:</p>
+            <div class="image-container">
+                <img src="etlville.JPG" alt="Eltville Stadtansicht">
+                <img src="innen.JPG" alt="Innenbereich Einzelhandel">
+                <img src="solarprojekt.jpg" alt="Solarprojekt und Ladestationen">
+                <img src="Unbenannt.JPG" alt="Detailplan Gebäude">
+                <img src="visualisierung.jpg" alt="Detailansicht des Einzelhandels">
+            </div>
+        </section>
+
+        <section id="kontakt" class="content">
+            <h2>Kontakt</h2>
+            <p><strong>Projektteam:</strong> Jonathan Reichert, Vincent Sucke, Paul Krug</p>
+            <p><strong>Betreuer:</strong> Prof. Dr. Link</p>
+            <p><strong>Hochschule:</strong> Hochschule Mainz</p>
+            <p>Dieses Projekt ist eine fiktive Projektentwicklung und dient lediglich zu Studienzwecken.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nachhaltiges Einkaufen in Eltville</p>
+    </footer>
+</body>
+</html>
